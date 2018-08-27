@@ -5,11 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".WelcomeActivity">
+    tools:context=".InsertActivity">
 
-    <TextView
-        android:id="@+id/text"
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/dtnascimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data Nascimento" />
+
+    <Spinner
+        android:id="@+id/graduacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/android_array"
+        android:prompt="@string/label_array"
+        android:value="Graduação"></Spinner>
+
+    <EditText
+        android:id="@+id/idiomanativo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idioma nativo" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="create"
+        android:text="Enviar" />
+
+
+    <Button
+        android:text="voltar"
+        android:onClick="back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
 
 </LinearLayout>
